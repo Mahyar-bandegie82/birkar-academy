@@ -53,11 +53,11 @@
 @media screen and (max-width:576px){
     .slider{
         width: 100% !important;
-        max-height: 500px !important;
+        max-height: 300px !important;
     }
     .slider img{
         width: 100% !important;
-        height: 500px !important;
+        height: 300px !important;
     }
     .about-text{
         border:none !important;
@@ -67,14 +67,6 @@
     }
 }
 @media screen and (max-width:1200px){
-    .slider{
-        width: 100% !important;
-        max-height: 500px !important;
-    }
-    .slider img{
-        width: 100% !important;
-        height: 500px !important;
-    }
     .about-text{
         border:none !important;
         margin-top: 50px;
