@@ -21,3 +21,26 @@
     color: #4361ee !important;
     font-weight: bolder;
 }
+@media screen and (min-width: 992px){
+    .slider-card p{
+        font-size: 30px !important;
+    }
+    .slider{
+        width: 100% !important;
+        max-height: 600px !important;
+    }
+    .slider img{
+        width: 100% !important;
+        height: 600px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:991px){
+    .slider{
+        width: 100% !important;
+        max-height: 500px !important;
+    }
+    .slider img{
+        width: 100% !important;
+        height: 500px !important;
+    }
+}
