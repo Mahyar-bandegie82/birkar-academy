@@ -1,0 +1,23 @@
+#navigation{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.376);
+}
+#navigation a{
+    color: #4361ee;
+    font-weight: bolder;
+    padding: 5px 10px !important;
+    position: relative;
+    box-sizing: border-box;
+}
+#navigation a:not(.navbar-brand):hover{
+    border-bottom: 2px solid #d90429;
+}
+.sign-up-btn{
+    padding: 10px 30px !important;
+    transition: all ease-in-out 500ms !important;
+    align-self: baseline !important;
+}
+.sign-up-btn:hover{
+    background: white !important;
+    color: #4361ee !important;
+    font-weight: bolder;
+}
