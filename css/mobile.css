@@ -12,6 +12,9 @@
 #navigation a:not(.navbar-brand):hover{
     border-bottom: 2px solid #d90429;
 }
+.main{
+    padding: 20px 0 100px 0 !important;
+}
 .sign-up-btn{
     padding: 10px 30px !important;
     transition: all ease-in-out 500ms !important;
@@ -49,4 +52,35 @@
     font-weight: bolder;
     text-align: center;
     opacity: 1;
+}
+#about{
+    width: 100%;
+    border-top: 3px solid #7b2cbf;
+}
+.about-h{
+    bottom: 100%;
+    transform: translateY(50%);
+    background: white;
+    padding: 0 30px;
+    color: #7b2cbf;
+}
+.about-text{
+    border: 3px solid #7b2cbf;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+.about-text:first-of-type{
+    margin-top: 100px !important;
+}
+.about-text svg{
+    fill: #3a86ff;
+    width: 80px;
+}
+.about-text p{
+    font-size: 20px !important;
+    text-align: justify;
+    line-height: 2;
+    margin: 0 !important;
 }
