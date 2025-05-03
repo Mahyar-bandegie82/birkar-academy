@@ -53,11 +53,11 @@
 @media screen and (max-width:576px){
     .slider{
         width: 100% !important;
-        max-height: 300px !important;
+        max-height: 299px !important;
     }
     .slider img{
         width: 100% !important;
-        height: 300px !important;
+        height: 299px !important;
     }
     .about-text{
         border:none !important;
