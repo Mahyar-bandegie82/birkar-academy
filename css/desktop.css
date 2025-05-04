@@ -34,6 +34,11 @@
         height: 600px !important;
     }
 }
+@media screen and (min-width: 992px) and (max-width: 1400px){
+    #road-con div > h1{
+        right: 40px !important;
+    }
+}
 @media screen and (min-width: 992px) and (max-width: 1199px){
     .slider-card p{
         font-size: 30px !important;
@@ -56,6 +61,9 @@
     .footer-logos{
         padding-right: 0 !important;
         padding: 20px !important;
+    }
+    #road-con div > h1{
+        right: 10px !important;
     }
 }
 @media screen and (min-width: 768px) and (max-width:991px){
@@ -102,6 +110,9 @@
     .footer-logos{
         padding: 20px;
     }
+    #road-con div > h1{
+        right: 10px !important;
+    }
 }
 @media screen and (min-width:577px ) and (max-width:767px) {
     .slider{
@@ -144,6 +155,9 @@
     }
     .time-t{
         margin-top: 50px !important;
+    }
+    #road-con div > h1{
+        right: 10px !important;
     }
 }
 @media screen and (max-width:576px){
@@ -207,6 +221,9 @@
     }
     .about-text:first-of-type{
         margin-top: 50px !important;
+    }
+    #road-con div > h1{
+        right: 10px !important;
     }
 }
 @media screen and (max-width:1200px){
