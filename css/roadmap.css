@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "iranian sans";
+  src: url("../font/Iranian\ Sans.ttf");
+}
+body{
+  font-family: "iranian sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "iranian sans", sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.main h2 {
+  color: #fffaca;
+  width: 70%;
+  box-shadow: 0 0 10px rgb(243, 255, 196);
+  display: inline;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.roadmap-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%;
+  height: auto;
+  border: 2px solid rgb(200, 200, 200);
+  padding: 10px;
+  border-radius: 20px;
+  background-image: url(./img/93edb31f1b75422132d82c69c6a5de02.png);
+  background-size: contain;
+  z-index: -4;
+  box-shadow: 0 0 10px rgba(19, 74, 76, 1);
+}
+
+.roadmap-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 0;
+}
+
+.roadmap-item {
+  width: 100%;
+  height: 130px;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.roadmap-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.roadmap-item:nth-child(odd) {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.roadmap-item1,
+.roadmap-item1 p {
+  background-color: #5e548e;
+}
+
+.roadmap-item2,
+.roadmap-item2 p {
+  background-color: #0091ad;
+}
+
+.roadmap-item3,
+.roadmap-item3 p {
+  background-color: #1d2d44;
+}
+
+.roadmap-item4,
+.roadmap-item4 p {
+  background-color: #014f86;
+}
+
+.roadmap-item5,
+.roadmap-item5 p {
+  background-color: #b08968;
+}
+
+.roadmap-item6,
+.roadmap-item6 p {
+  background-color: #8d99ae;
+}
+
+.roadmap-item7,
+.roadmap-item7 p {
+  background-color: #1877a3;
+}
+
+.roadmap-item8,
+.roadmap-item8 p {
+  background-color: #3a0ca3;
+}
+
+.roadmap-item9,
+.roadmap-item9 p {
+  background-color: #216869;
+}
+
+.roadmap-item span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -23px;
+  right: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(47, 190, 195, 0.5);
+  color: brown;
+  background-color: aliceblue;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  z-index: 10;
+}
+
+.roadmap-item:nth-child(odd) span {
+  left: 10px;
+  right: unset;
+}
+
+.roadmap-item p {
+  padding: 10px;
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.roadmap-img-container {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.roadmap-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.road-img-left {
+  position: absolute;
+  width: 150px;
+  z-index: -100;
+  right: -98px;
+  top: 35px;
+}
+
+.road-img-right {
+  position: absolute;
+  width: 150px;
+  z-index: -100;
+  left: -98px;
+  top: 38px;
+}
+
+
+/* -----------course-detail----------- */
+
+.course-detail-section {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  padding: 10px;
+  width: 92%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-price {
+  padding: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.course-price-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px
+}
+
+.course-price-detail img{
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
+
+.course-price-detail p{
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.pre-registration-btn{
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color:rgb(53, 200, 243);
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.course-price span {
+  color: rgb(142, 213, 87);
+}
+
+/* ----------- media-Query ----------- */
+
+@media (max-width:767px) {
+  .full-road {
+    display: none;
+  }
+}
+
+
+@media (min-width:768px) {
+
+
+  .roadmap-section {
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .roadmap-container {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 90px 20px;
+    padding: 20px 20px;
+    margin-top: 30px;
+  }
+
+  .roadmap-item {
+    grid-column: span 2;
+    direction: ltr;
+    opacity: 0;
+  }
+
+  .roadmap-item {
+    z-index: 10;
+  }
+
+  .roadmap-item:nth-child(odd) {
+    grid-column-start: unset;
+    grid-column-end: unset;
+    grid-column: span 2;
+  }
+
+  .road-img-left {
+    display: none;
+  }
+
+  .road-img-right {
+    display: none;
+  }
+
+  .roadmap-item:nth-child(odd) span {
+    left: unset;
+    right: 10px;
+  }
+
+  .roadmap-item p {
+    font-size: 0.9rem;
+    z-index: 2;
+  }
+
+  .roadmap-item:nth-child(4) {
+    order: 6;
+    grid-column-start: 8;
+    grid-column-end: 6;
+  }
+
+  .roadmap-item:nth-child(4) span {
+    left: 14px;
+    right: unset;
+  }
+
+  .roadmap-item:nth-child(5) {
+    order: 5;
+    grid-column-start: 6;
+    grid-column-end: 4;
+  }
+
+  .roadmap-item:nth-child(5) span {
+    left: 14px;
+    right: unset;
+  }
+
+  .roadmap-item:nth-child(6) {
+    order: 4;
+    grid-column-start: 4;
+    grid-column-end: 2;
+  }
+
+  .roadmap-item:nth-child(6) span {
+    left: 14px;
+    right: unset;
+  }
+
+  .roadmap-item:nth-child(7) {
+    order: 7;
+  }
+
+  .roadmap-item:nth-child(8) {
+    order: 8;
+  }
+
+  .roadmap-item:nth-child(9) {
+    order: 9;
+  }
+
+  .full-road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 70px;
+  }
+
+}
+
+@media (min-width:992px) {
+
+
+  .roadmap-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:1201px) {}
+#road-con{
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 50px;
+  border-top: 3px solid #3a0ca3;
+  position: relative;
+}
+#road-con div > h1{
+  position: absolute;
+  bottom: 100%;
+  transform: translateY(50%);
+  padding: 0 30px;
+  background: white;
+  color: #3a0ca3;
+  right: 90px;
+}

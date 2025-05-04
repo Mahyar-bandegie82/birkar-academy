@@ -2,6 +2,9 @@
     border-bottom: 2px solid #3a86ff !important;
     box-sizing: border-box;
 }
+:is(.about-h , .info-card-h , #road-con  h1){
+    font-size: 24px;
+  }
 #navigation a{
     color: #4361ee;
     font-weight: bolder;
@@ -69,6 +72,7 @@
     background: white;
     padding: 0 15px;
     color: #7b2cbf;
+    font-size: 23px;
 }
 .about-text{
     border: 3px solid #7b2cbf;
