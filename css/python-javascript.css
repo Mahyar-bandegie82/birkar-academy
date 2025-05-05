@@ -24,6 +24,7 @@
     position: relative;
     border: 4px solid #0077ff;
     border-radius: 20px;
+    margin-bottom: 25px;
 }
 
 .course-h {
@@ -93,9 +94,42 @@
     color: white;
 }
 .topic-c{
-    width: fit-content;
-    padding: 15px 30px;
+    width: 120px;
+    padding: 15px 0;
     background: #3d50ff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.term{
+    background: #03045e;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: #ffd500;
+    margin-top: 25px;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+.term-o{
+    margin-bottom: 25px;
+}
+.term-t{
+    margin-top: 45px !important;
+}
+.term:hover{
+    background: white;
+    border: 3px solid #03045e;
+    color: #03045e;
+}
+.session-h-t{
+    position: absolute;
+}
+.session-team-t{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    border-top: 3px solid #3d50ff;
 }
