@@ -84,6 +84,11 @@
     padding: 20px 0;
     color: #0a9396;
     margin: auto;
+    gap: 20px;
+}
+
+.learnings li{
+    gap: 20px;
 }
 .learnings svg{
     fill: #fb5607;
