@@ -1,0 +1,101 @@
+#main-content {
+    background-image: url("../assets/Python\ vs\ JavaScript\ which\ is\ better\ to\ learn\ Coding\ for\ beginners.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 37%;
+    height: 500px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+#main-content>h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.about-course {
+    width: 100%;
+    padding: 30px 40px;
+    position: relative;
+    border: 4px solid #0077ff;
+    border-radius: 20px;
+}
+
+.course-h {
+    position: absolute;
+    color: #0077ff;
+    bottom: 100%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: 0 30px;
+    font-size: 16px;
+    background: white;
+    font-weight: bold;
+}
+
+.introduction {
+    width: 100%;
+    text-align: justify;
+    line-height: 2;
+}
+
+.topic {
+    font-weight: bolder;
+    font-size: 19px;
+    color: #7209b7;
+}
+
+.intro-text {
+    color: #00296b;
+}
+
+.session-topic {
+    margin-top: 30px;
+    padding-top: 20px;
+    position: relative;
+    border-top: 3px solid #3d50ff;
+}
+
+.session-h {
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    transform: translate(50%, 60%);
+    font-weight: bold;
+    padding: 0 30px;
+    background: white;
+    font-size: 16px;
+    color: #3d50ff;
+}
+
+.session-team {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.session {
+    border: 3px solid #3d50ff;
+    width: 100%;
+    border-radius: 20px;
+    gap: 20px;
+
+}
+
+.topic-s {
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+.topic-c{
+    width: fit-content;
+    padding: 15px 30px;
+    background: #3d50ff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
