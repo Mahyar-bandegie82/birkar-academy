@@ -1,25 +1,45 @@
 @font-face {
   font-family: "iranian sans";
-  src: url("../font/Iranian\ Sans.ttf");
+  src: url(../font/Iranian\ Sans.ttf);
 }
-body{
+
+#road-con{
+  border-top: 3px solid #3a0ca3;
+  margin-top: 60px;
+  padding-top: 50px;
+}
+.head-d > h1{
+  position: absolute;
+  color: #3a0ca3;
+  z-index: 1000;
+  bottom: 100%;
+  transform: translateY(-110%);
+  background: white;
+  padding: 0 20px;
+}
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "Noto Sans Arabic";
   font-family: "iranian sans", sans-serif;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  direction: rtl;
-  font-family: "iranian sans", sans-serif;
-}
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  padding-bottom: 0px !important;
 }
+.main > h1{
+  position: absolute;
+  color: #3a0ca3;
+  z-index: 1000;
+  bottom: 100%;
+}
+.main :is(p){
 
+}
 .main h2 {
   color: #fffaca;
   width: 70%;
@@ -32,27 +52,53 @@ body{
   text-align: center;
 }
 
-
 .roadmap-section {
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 92%;
   height: auto;
   border: 2px solid rgb(200, 200, 200);
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 20px;
-  background-image: url(./img/93edb31f1b75422132d82c69c6a5de02.png);
-  background-size: contain;
-  z-index: -4;
-  box-shadow: 0 0 10px rgba(19, 74, 76, 1);
+  background-image: linear-gradient(rgb(26, 53, 65),rgb(7, 139, 148 ) , rgb(23, 28, 43));
 }
 
 .roadmap-container {
   margin-top: 20px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px 0;
+}
+
+.roadmap-item-a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  background-color: rgb(53, 200, 243);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 16vw;
+  text-align: center;
+  bottom: -15px;
+  z-index: 3;
+  transition: all 0.3;
+  font-weight: 600;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+.roadmap-item-a:hover{
+  background-color: rgb(45, 145, 195);
+}
+
+.roadmap-item-a:active{
+  transform: translate(3px , 3px);
+  box-shadow: none;
 }
 
 .roadmap-item {
@@ -70,6 +116,10 @@ body{
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.roadmap-item:hover .roadmap-img-container img{
+  transform: scale(1.1);
+}
+
 .roadmap-item.visible {
   opacity: 1;
   transform: translateY(0);
@@ -79,7 +129,10 @@ body{
   grid-column-start: 2;
   grid-column-end: 5;
 }
+.roadmap-item :is(p){
+  font-size: 14px !important;
 
+}
 .roadmap-item1,
 .roadmap-item1 p {
   background-color: #5e548e;
@@ -172,13 +225,14 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.5s;
 }
 
 .road-img-left {
   position: absolute;
   width: 150px;
   z-index: -100;
-  right: -98px;
+  right: -20vw;
   top: 35px;
 }
 
@@ -186,7 +240,7 @@ body{
   position: absolute;
   width: 150px;
   z-index: -100;
-  left: -98px;
+  left: -20vw;
   top: 38px;
 }
 
@@ -196,16 +250,16 @@ body{
 .course-detail-section {
   border: 1px solid rgb(207, 207, 207);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px !important;
   width: 92%;
-  margin-top: 50px;
+  margin-top: 50px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .course-price {
-  padding: 10px;
+  padding: 10px !important;
   border-bottom: 1px solid rgb(207, 207, 207);
   width: 100%;
   display: flex;
@@ -237,10 +291,16 @@ body{
   width: 90%;
   padding: 5px;
   border-radius: 5px;
+  font-weight: 600;
   background-color:rgb(53, 200, 243);
   border: none;
   color: white;
   margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.pre-registration-btn:hover{
+  background-color: rgb(45, 145, 195);
 }
 
 .course-price span {
@@ -249,18 +309,26 @@ body{
 
 /* ----------- media-Query ----------- */
 
-@media (max-width:767px) {
+@media (max-width:690px) {
   .full-road {
     display: none;
   }
 }
 
 
-@media (min-width:768px) {
+@media (min-width:690px) {
 
+
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 
   .roadmap-section {
-    max-width: 900px;
+    max-width: 90%vw;
     position: relative;
     overflow: hidden;
   }
@@ -278,8 +346,16 @@ body{
     opacity: 0;
   }
 
+  .main :is(p){
+    font-size: 14px !important;
+  }
   .roadmap-item {
     z-index: 10;
+  }
+
+  .roadmap-item-a {
+    right:27%;
+    min-width: 90px;
   }
 
   .roadmap-item:nth-child(odd) {
@@ -301,10 +377,7 @@ body{
     right: 10px;
   }
 
-  .roadmap-item p {
-    font-size: 0.9rem;
-    z-index: 2;
-  }
+
 
   .roadmap-item:nth-child(4) {
     order: 6;
@@ -369,20 +442,16 @@ body{
   }
 }
 
-@media (min-width:1201px) {}
-#road-con{
-  width: 100%;
-  margin-top: 100px;
-  padding-top: 50px;
-  border-top: 3px solid #3a0ca3;
-  position: relative;
-}
-#road-con div > h1{
-  position: absolute;
-  bottom: 100%;
-  transform: translateY(50%);
-  padding: 0 30px;
-  background: white;
-  color: #3a0ca3;
-  right: 90px;
+@media (min-width:1201px) {
+  .main{
+    justify-content: center;
+    padding: 30px 0;
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .course-detail-section {
+    margin-top: 0;
+    max-width: 400px;
+  }
 }
