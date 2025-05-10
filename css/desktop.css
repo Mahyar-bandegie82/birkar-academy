@@ -24,6 +24,9 @@
     color: #4361ee !important;
     font-weight: bolder;
 }
+@media screen and (max-width:1370px ){
+    
+}
 @media screen and (max-width:1330px){
     .skill-grid{
         display: grid;
@@ -76,6 +79,7 @@
         width: 100% !important;
         height: 600px !important;
     }
+    
 }
 @media screen and (min-width: 992px) and (max-width: 1400px){
     #road-con div > h1{
