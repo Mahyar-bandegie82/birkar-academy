@@ -24,6 +24,14 @@
     color: #4361ee !important;
     font-weight: bolder;
 }
+@media screen and (max-width:1220px){
+    .skill-grid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 30px;
+        padding-top: 50px;
+    }
+}
 @media screen and (min-width: 992px){
     .slider-card p{
         font-size: 30px !important;
