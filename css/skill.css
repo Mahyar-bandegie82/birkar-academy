@@ -20,8 +20,9 @@
 }
 .card-set{
     max-width: 450px;
+    min-height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: fit-content;
     flex-direction: column;
@@ -39,12 +40,11 @@
 .txt-box{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: spa;
     align-items: flex-end;
     color: black;
     flex-direction: column;
     padding: 15px;
-    gap: 30px;
 }
 .txt-box p{
     font-weight: bolder;
@@ -55,10 +55,30 @@
     justify-content: center;
     align-items: flex-start;
 }
+:is(.txt-box2 , .txt-box3){
+    gap: 10px !important;
+}
+:is(.txt-box4){
+    gap: 7px !important;
+}
+:is(.txt-box2 , .txt-box3 , .txt-box4) > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column !important;
+    gap: 10px;
+}
+:is(.txt-box4) > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column !important;
+    gap: 5px;
+}
 .txt-box > div span{
     font-size: 13px;
 }
-.txt-box > div span:not(:last-of-type)::after{
+.txt-box1 > div span:not(:last-of-type)::after{
     content: "";
     width: 2px;
     height: 7px;
