@@ -13,11 +13,13 @@
 }
 .skill-grid{
     display: grid;
-    grid-template-columns: repeat(4 , auto);
+    grid-template-columns: repeat(4 , 1fr);
+    justify-items: center;
     gap: 30px;
     padding-top: 50px;
 }
 .card-set{
+    max-width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +40,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     color: black;
     flex-direction: column;
     padding: 15px;
@@ -52,7 +54,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 5px;
 }
 .txt-box > div span{
     font-size: 13px;
@@ -62,7 +63,8 @@
     width: 2px;
     height: 7px;
     border: 1px solid black;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .txt-box button:hover{
     background: white;
