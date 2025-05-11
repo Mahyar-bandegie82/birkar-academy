@@ -40,11 +40,21 @@
 .txt-box{
     width: 100%;
     display: flex;
-    justify-content: spa;
+    justify-content: space-between;
     align-items: flex-end;
     color: black;
     flex-direction: column;
     padding: 15px;
+}
+.txt-box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+    flex-direction: column;
+    padding: 15px;
+    gap: 40px;
 }
 .txt-box p{
     font-weight: bolder;
