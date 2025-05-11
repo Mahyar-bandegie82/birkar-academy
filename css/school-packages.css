@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "iranian sans";
+  src: url(../font/Iranian\ Sans.ttf);
+}
+
+:root {
+  --main-color:rgb(53, 200, 243);
+}
+
+
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "Noto Sans Arabic";
+  font-family: "iranian sans", sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  gap: 30px;
+  max-width: 1500px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 94%;
+  gap: 40px;
+}
+
+.carousel-name{
+  background-color: rgb(13, 50, 72);
+  position: absolute;
+  bottom: 40px;
+  left:25vw;
+  right: 25vw;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  font-weight: 600;
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+}
+
+
+.package-introduction{
+  width: 70%;
+}
+
+.package-title {
+  border-right: 6px solid var(--main-color);
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.package-title span {
+  color: darkblue
+}
+
+.package-view {
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 10px;
+}
+
+.package-view-sub1{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.package-view-sub2{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.package-view-sub1 span {
+  font-size: 1.4rem;
+  color: rgb(78, 25, 109);
+}
+
+.package-view ul{
+  list-style: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.package-view ul li::before {
+  content: '✓';
+  margin-left: 10px;
+  color: brown;
+  font-weight: bold;
+}
+
+.introduction-container h3{
+  border-right: 6px solid var(--main-color);
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+.introduction-container h4{
+  color: rgb(9, 51, 73);
+}
+
+.introduction-container h5::before{
+  content: "↩";
+  margin-left: 10px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.introduction-container{
+  font-size: 0.9rem;
+  padding: 0 30px;
+}
+
+/* -------------.course-detail-section------------- */
+
+.course-detail-section {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-price {
+  padding: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.course-price-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px
+}
+
+.course-price-detail img{
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
+
+.course-price-detail p{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.pre-registration-btn{
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color:rgb(53, 200, 243);
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.pre-registration-btn:hover{
+  background-color: rgb(45, 145, 195);
+}
+
+.course-price span {
+  color: rgb(142, 213, 87);
+}
+
+.detail-container{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+/* -------------.course-detail-section------------- */
+
+
+@media (max-width:760px) {
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .package-introduction{
+    width: 100%;
+  }
+
+  .course-detail-section{
+    width: 100%;
+  }
+
+  .carousel-name {
+  font-size: 1rem;
+  }
+}
