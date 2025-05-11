@@ -198,13 +198,19 @@ section.main {
         padding: 8px 60px;
         border: 2px solid #3a86ff;
     }
-
+    a{
+        color: white;
+        text-decoration: none;
+    }
     >button:hover {
         color: #3a86ff !important;
         background: white;
         border: 2px solid #3a86ff;
         transition: all ease-in-out 300ms;
     }
+}
+.check-input:has(>button:hover) a{
+    color: #3a86ff;
 }
 .sessions {
     width: fit-content;
