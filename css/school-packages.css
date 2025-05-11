@@ -15,12 +15,12 @@
   font-family: "iranian sans", sans-serif;
 }
 
-.body {
+/* .body {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-}
+} */
 
 .background-container {
   display: flex;
