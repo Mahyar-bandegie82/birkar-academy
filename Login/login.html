@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login-script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <main class="main">
+      <div class="login-header">
+        <h2>
+          ثبت نام
+        </h2>
+        <hr class="sub-line">
+        <!-- <span>
+          قبلا ثبت نام کرده اید؟
+          <a href="#">
+            وارد شوید
+          </a>
+        </span> -->
+      </div>
+
+      <form action="server.php">
+
+        <h3 class="form-title">مشخصات</h3>
+
+        <div class="form-cell">
+          <label for="name-input">نام:</label>
+          <input id="name-input" class="form-input" type="text" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+          <span class="placeholder">نام را وارد کنید</span>
+        </div>
+
+        <div class="form-cell">
+          <label for="last-name-input">نام خانوادگی:</label>
+          <input id="last-name-input" class="form-input" type="text" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+          <span class="placeholder">نام خانوادگی را وارد کنید</span>
+        </div>
+
+        <div class="form-cell">
+          <label for="number-input">شماره تلفن:</label>
+          <input id="number-input" class="form-input form-input-inset" type="tel" name="phone" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+          <span class="placeholder">09123456789</span>
+        </div>
+
+        <div class="form-cell">
+          <label for="">جنسیت:</label>
+          <div class="radio-container">
+
+            <div class="radio-container-sub">
+              <label for="male-radio">مرد</label>
+
+              <input id="male-radio" class="gender-radio" type="radio" value="male" name="gender" required
+                oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            </div>
+
+            <div class="radio-container-sub">
+              <label for="female-radio">زن</label>
+
+              <input id="female-radio" class="gender-radio" type="radio" value="female" name="gender" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-cell">
+          <label for="grade">مقطع تحصیلی:</label>
+          <select class="form-select" name="" id="grade" onchange="changeLevel()" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">مقطع را انتخاب کنید</option>
+            <option value="primary">ابتدایی</option>
+            <option value="middle">متوسطه اول</option>
+            <option value="high">متوسطه دوم</option>
+          </select>
+        </div>
+
+        <div class="form-cell">
+          <label for="">پایه تحصیلی:</label>
+          <select name="" id="primary-level" class="level-select form-select" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">پایه تحصیلی را انتخاب کنید</option>
+            <option value="">اول</option>
+            <option value="">دوم</option>
+            <option value="">سوم</option>
+            <option value="">چهارم</option>
+            <option value="">پنجم</option>
+            <option value="">ششم</option>
+          </select>
+
+          <select name="" id="middle-level" class="level-select form-select" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">پایه تحصیلی را انتخاب کنید</option>
+            <option value="">هفتم</option>
+            <option value="">هشتم</option>
+            <option value="">نهم</option>
+          </select>
+
+          <select name="" id="high-level" class="level-select form-select" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">پایه تحصیلی را انتخاب کنید</option>
+            <option value="">دهم</option>
+            <option value="">یازدهم</option>
+            <option value="">دوازدهم</option>
+          </select>
+        </div>
+
+        <div class="form-cell priority priority1">
+          <h3>تعیین محل برگزاری کلاس:</h3>
+          <label for="">اولویت اول محل برگزاری:</label>
+          <select class="form-select" name="" id="priority1" onchange="updateSecondSelect()" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">محل برگزاری کلاس</option>
+            <option value="محل1">محل1</option>
+            <option value="محل2">محل2</option>
+            <option value="محل3">محل3</option>
+          </select>
+        </div>
+
+        <div class="form-cell priority priority2">
+          <label for="">اولویت دوم محل برگذاری:</label>
+          <select class="form-select" name="" id="priority2" required
+            oninvalid="this.setCustomValidity('لطفاً این فیلد را پر کنید')" oninput="this.setCustomValidity('')">
+            <option value="">محل برگزاری کلاس</option>
+            <option value="محل1">محل1</option>
+            <option value="محل2">محل2</option>
+            <option value="محل3">محل3</option>
+          </select>
+        </div>
+
+        <div class="form-cell">
+          <button class="signup-btn" type="submit">ثبت نام</button>
+        </div>
+
+      </form>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
